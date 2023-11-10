@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- A continuación los controles de audio -->
+    <audio id="reproductor" controls autoplay loop>
+        <source src="../Audio/vivamexico.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+    <img id="maracaton" src="../Img/maraca.png">
+    <img id="maracatuna" src="../Img/maraca.png">
+
+    <!-- He hecho para que haya un enlace a algo relacionado con cada asignatura -->
+    <table>
+        <caption>Horario</caption>
+        <tr>
+            <td id="esquina"></td>
+            <th>
+                <span id="dia">Lunes</span>
+            </th>
+            <th>
+                <span id="dia">Martes</span>
+            </th>
+            <th>
+                <span id="dia">Miercoles</span>
+            </th>
+            <th>
+                <span id="dia">Jueves</span>
+            </th>
+            <th>
+                <span id="dia">Viernes</span>
+            </th>
+            </p>
+        </tr>
+        <tr>
+            <td class="hora">
+                8:15
+                <br>9:10
+            </td>
+            <td rowspan="2" class="progra" onclick="window.open('https://www.uciinformatica.es/programacion-informatica-que-es-como-funciona/', '_blank')">Programación</td>
+            <td rowspan="2" class="sistemas" onclick="window.open('https://www.euroinnova.edu.es/blog/que-es-un-sistema-informatico', '_blank')">Sistemas Informáticos</td>
+            <td rowspan="2" class="sistemas" onclick="window.open('https://www.euroinnova.edu.es/blog/que-es-un-sistema-informatico', '_blank')">Sistemas Informáticos</td>
+            <td class="fol" onclick="window.open('https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/publicaciones-descargables/instituciones-penitenciarias/Formacion_y_orientacion_laboral_126170809_web.pdf', '_blank')">Formación y Orientación Laboral</td>
+            <td id="nada"></td>
+        </tr>
+        <tr>
+            <td class="hora">
+                9:10
+                <br>10:05
+            </td>
+            <td rowspan="2" class="lenguaje" onclick="window.open('https://universidadeuropea.com/blog/que-es-lenguaje-marca/', '_blank')">Lenguajes de Marcas y Sistemas de Gestión de la Información</td>
+            <td rowspan="2" class="progra" onclick="window.open('https://www.uciinformatica.es/programacion-informatica-que-es-como-funciona/', '_blank')">Programación</td>
+
+        </tr>
+        <tr>
+            <td class="hora">
+                10:05
+                <br>11:00
+            </td>
+            <td class="sistemas" onclick="window.open('https://www.euroinnova.edu.es/blog/que-es-un-sistema-informatico', '_blank')">Sistemas Informáticos</td>
+            <td class="entornos" onclick="window.open('https://www.hostinger.es/tutoriales/que-es-un-entorno-de-desarrollo', '_blank')">Entornos de Desarrollo</td>
+            <td class="bases" onclick="window.open('https://www.oracle.com/es/database/what-is-database/', '_blank')">Bases de datos</td>
+
+        </tr>
+        <tr>
+            <td colspan="6" id="rec">R e c r e o</td>
+        </tr>
+        <tr>
+            <td class="hora">
+                11:30
+                <br>12:25
+            </td>
+            <td class="sistemas" onclick="window.open('https://www.euroinnova.edu.es/blog/que-es-un-sistema-informatico', '_blank')">Sistemas informáticos</td>
+            <td rowspan="3" class="progra" onclick="window.open('https://www.uciinformatica.es/programacion-informatica-que-es-como-funciona/', '_blank')">Programación</td>
+            <td rowspan="2" class="bases" onclick="window.open('https://www.oracle.com/es/database/what-is-database/', '_blank')">Bases de Datos</td>
+            <td class="progra" onclick="window.open('https://www.uciinformatica.es/programacion-informatica-que-es-como-funciona/', '_blank')">Programación</td>
+            <td rowspan="2" class="lenguaje" onclick="window.open('https://universidadeuropea.com/blog/que-es-lenguaje-marca/', '_blank')">Lenguajes de Marcas y Sistemas de Gestión de la Información</td>
+        </tr>
+        <tr>
+            <td class="hora">
+                12:25
+                <br>13:20
+            </td>
+            <td rowspan="2" class="fol" onclick="window.open('https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/publicaciones-descargables/instituciones-penitenciarias/Formacion_y_orientacion_laboral_126170809_web.pdf', '_blank')">Formación y Orientación Laboral</td>
+            <td class="bases" onclick="window.open('https://www.oracle.com/es/database/what-is-database/', '_blank')">Bases de Datos</td>
+        </tr>
+        <tr>
+            <td class="hora">
+                13:20
+                <br>14:15
+            </td>
+            <td rowspan="2" id="nada4"></td>
+            <td rowspan="2" class="entornos" onclick="window.open('https://www.hostinger.es/tutoriales/que-es-un-entorno-de-desarrollo', '_blank')">Entornos de Desarrollo</td>
+            <td rowspan="2" class="bases" onclick="window.open('https://www.oracle.com/es/database/what-is-database/', '_blank')">Bases de Datos</td>
+        </tr>
+        <tr>
+            <td class="hora">
+                14:15
+                <br>15:10
+            </td>
+            <td id="nada2"></td>
+            <td id="nada3"></td>
+        </tr>
+    </table>
+    <a href=""><img id="chichas" src="../Img/chihuahua.png"></a>
+    <!-- El siguiente script está enlazado con un archivo de javascript y el atributo defer es para asegurarme de que se ejecute al haber cargado la página web -->
+    <script src="../JS/JavaScript.js" defer></script>
+</body>
+
+
+</html>
