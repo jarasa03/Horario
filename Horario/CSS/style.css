@@ -1,260 +1,285 @@
-/* Fuentes instaladas */
-
-@font-face {
-    font-family: mexicana;
-    src: url(../Fonts/Mexicana.ttf);
-}
-
-@font-face {
-    font-family: amigo;
-    src: url(../Fonts/Amigo.ttf);
-}
-
-@font-face {
-    font-family: mayan;
-    src: url(../Fonts/Mayan.ttf);
-}
-
-
-/* Escalar la celda al pasar el ratón por encima y suavizar sus bordes */
-
-td:hover {
-    transform: scale(1.2);
-    border-radius: 15px;
-}
-
-
-/* Aplicar una transición para hacer el efecto más suave */
-
-td {
-    transition: transform 0.3s;
-    cursor: pointer;
-    /* Poner el cursos como "clickable" */
-}
-
-
-/* Excluyo de las animaciones las celdas del recreo y las horas */
-
-td#rec {
-    transition: none;
-    /* Anular la transición */
-    transform: none;
-    /* Anular la transformación */
-    border-radius: 0;
-    /* Anular los bordes redondeados */
-    cursor: auto;
-    /* Anular el cambio de cursor */
-}
-
-td.hora {
-    transition: none;
-    /* Anular la transición */
-    transform: none;
-    /* Anular la transformación */
-    border-radius: 0;
-    /* Anular los bordes redondeados */
-    cursor: auto;
-    /* Anular el cambio de cursor */
-}
-
-
-/* Estilos y animaciones para las maracas */
-
-#maracatuna {
-    width: 10%;
-    margin: 0;
-    position: fixed;
-    padding: 0;
-    top: 1%;
-    left: 1%;
-    animation-name: maraca1;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-#maracaton {
-    width: 10%;
-    margin: 0;
-    position: fixed;
-    padding: 0;
-    top: 1%;
-    right: 1%;
-    animation-name: maraca2;
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes maraca1 {
-    50% {
-        transform: rotate(90deg);
+    /* Fuentes instaladas */
+    
+    @font-face {
+        font-family: mexicana;
+        src: url(../Fonts/Mexicana.ttf);
     }
-}
-
-@keyframes maraca2 {
-    50% {
-        transform: rotate(90deg);
+    
+    @font-face {
+        font-family: amigo;
+        src: url(../Fonts/Amigo.ttf);
     }
-}
-
-
-/* Estilos y animacioones para el chihuahua */
-
-#chichas {
-    left: 5%;
-    bottom: 5%;
-    width: 10%;
-    position: absolute;
-    animation-name: chichas;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes chichas {
-    0% {
+    
+    @font-face {
+        font-family: mayan;
+        src: url(../Fonts/Mayan.ttf);
+    }
+    /* Estilos para hacer que sea responsive */
+    
+    @media screen and (max-width: 750px) {
+        body {
+            background-image: url(../Img/vertical.png);
+            /* Las tres propiedades de a continuación son para que esté todo bien centrado */
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        table {
+            width: 100%;
+            /* Ocupa todo el ancho disponible */
+            height: auto;
+            /* Ajusta la altura proporcionalmente */
+            overflow-x: auto;
+            /* Agregar desplazamiento horizontal */
+            margin: 0;
+            /* Elimina el margen */
+        }
+    }
+    
+    @media screen and (min-width:751px) {
+        body {
+            background-image: url(../Img/fondo.PNG);
+        }
+    }
+    /* Escalar la celda al pasar el ratón por encima y suavizar sus bordes */
+    
+    td:hover {
+        transform: scale(1.2);
+        border-radius: 15px;
+    }
+    /* Aplicar una transición para hacer el efecto más suave */
+    
+    td {
+        transition: transform 0.3s;
+        cursor: pointer;
+        /* Poner el cursos como "clickable" */
+    }
+    /* Excluyo de las animaciones las celdas del recreo y las horas */
+    
+    td#rec {
+        transition: none;
+        /* Anular la transición */
+        transform: none;
+        /* Anular la transformación */
+        border-radius: 0;
+        /* Anular los bordes redondeados */
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    td.hora {
+        transition: none;
+        /* Anular la transición */
+        transform: none;
+        /* Anular la transformación */
+        border-radius: 0;
+        /* Anular los bordes redondeados */
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    #nada {
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    #nada2 {
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    #nada3 {
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    #nada4 {
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    
+    #esquina {
+        cursor: auto;
+        /* Anular el cambio de cursor */
+    }
+    /* Estilos y animaciones para las maracas */
+    
+    #maracatuna {
+        width: 10%;
+        margin: 0;
+        position: fixed;
+        padding: 0;
+        top: 1%;
+        left: 1%;
+        animation-name: maraca1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    #maracaton {
+        width: 10%;
+        margin: 0;
+        position: fixed;
+        padding: 0;
+        top: 1%;
+        right: 1%;
+        animation-name: maraca2;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes maraca1 {
+        50% {
+            transform: rotate(90deg);
+        }
+    }
+    
+    @keyframes maraca2 {
+        50% {
+            transform: rotate(90deg);
+        }
+    }
+    /* Estilos y animacioones para el chihuahua */
+    
+    #chichas {
         left: 5%;
         bottom: 5%;
-        transform: rotateY(0deg);
+        width: 10%;
+        position: absolute;
+        animation-name: chichas;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
-    25% {
-        left: 80%;
-        bottom: 5%;
-        transform: rotateY(0deg);
+    
+    @keyframes chichas {
+        0% {
+            left: 5%;
+            bottom: 5%;
+            transform: rotateY(0deg);
+        }
+        25% {
+            left: 80%;
+            bottom: 5%;
+            transform: rotateY(0deg);
+        }
+        50% {
+            left: 80%;
+            bottom: 5%;
+            transform: rotateY(180deg);
+        }
+        75% {
+            left: 5%;
+            bottom: 5%;
+            transform: rotateY(180deg);
+        }
     }
-    50% {
-        left: 80%;
-        bottom: 5%;
-        transform: rotateY(180deg);
+    /* Estilos para toda la tabla */
+    
+    table {
+        border-style: solid;
+        border-collapse: collapse;
+        margin: auto;
+        margin: 50px;
     }
-    75% {
-        left: 5%;
-        bottom: 5%;
-        transform: rotateY(180deg);
+    /* Estilos para la interfaz de audio */
+    
+    audio {
+        display: block;
+        margin: 1% auto 0;
     }
-}
-
-
-/* Estilos para la imagen de fondo */
-
-body {
-    background-image: url(../Img/fondo.PNG);
-}
-
-
-/* Estilos para toda la tabla */
-
-table {
-    border-style: solid;
-    border-collapse: collapse;
-    margin: auto;
-    margin: 50px;
-}
-
-
-/* Estilos para la interfaz de audio */
-
-audio {
-    display: block;
-    margin: 1% auto 0;
-}
-
-
-/* Estilos para todas las celdas */
-
-td {
-    border-style: solid;
-    width: 5%;
-    text-align: center;
-    font-family: mayan;
-}
-
-tr {
-    border-style: solid;
-}
-
-th {
-    border-style: solid;
-    font-family: amigo;
-    font-size: xx-large;
-    border-color: black;
-    color: rgb(78, 0, 111)
-}
-
-caption {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-
-/* Estilos para las celdas vacías */
-
-#esquina {
-    border-top: hidden;
-    border-left: hidden;
-}
-
-#nada {
-    border-right: hidden;
-}
-
-#nada2 {
-    border-bottom-style: hidden;
-    border-right: hidden;
-}
-
-#nada3 {
-    border-bottom: hidden;
-    border-right: hidden;
-}
-
-#nada4 {
-    border-bottom: hidden;
-}
-
-
-/* Estilos para cada asignatura o tipo de celda */
-
-caption {
-    font-family: mexicana;
-    color: #1b7925;
-    font-size: xxx-large;
-}
-
-.progra {
-    background-color: #62ff72;
-}
-
-.sistemas {
-    background-color: #ffa55b;
-}
-
-.fol {
-    background-color: #fcec63;
-}
-
-.entornos {
-    background-color: #b2f5f8;
-}
-
-.bases {
-    background-color: #8591ff;
-}
-
-.lenguaje {
-    background-color: #ff85f3;
-}
-
-th {
-    background-color: rgb(228, 166, 255);
-}
-
-.hora {
-    background-color: rgb(228, 166, 255);
-    font-family: mayan;
-}
-
-#rec {
-    background-color: rgb(162, 162, 162);
-    font-family: amigo;
-    font-size: xx-large;
-}
+    /* Estilos para todas las celdas */
+    
+    td {
+        border-style: solid;
+        width: 5%;
+        text-align: center;
+        font-family: mayan;
+    }
+    
+    tr {
+        border-style: solid;
+    }
+    
+    th {
+        border-style: solid;
+        font-family: amigo;
+        font-size: xx-large;
+        border-color: black;
+        color: rgb(78, 0, 111)
+    }
+    
+    caption {
+        font-weight: bold;
+        font-size: 35px;
+    }
+    /* Estilos para las celdas vacías */
+    
+    #esquina {
+        border-top: hidden;
+        border-left: hidden;
+    }
+    
+    #nada {
+        border-right: hidden;
+    }
+    
+    #nada2 {
+        border-bottom-style: hidden;
+        border-right: hidden;
+    }
+    
+    #nada3 {
+        border-bottom: hidden;
+        border-right: hidden;
+    }
+    
+    #nada4 {
+        border-bottom: hidden;
+    }
+    /* Estilos para cada asignatura o tipo de celda */
+    
+    caption {
+        font-family: mexicana;
+        color: #1b7925;
+        font-size: xxx-large;
+    }
+    
+    .progra {
+        background-color: #62ff72;
+    }
+    
+    .sistemas {
+        background-color: #ffa55b;
+    }
+    
+    .fol {
+        background-color: #fcec63;
+    }
+    
+    .entornos {
+        background-color: #b2f5f8;
+    }
+    
+    .bases {
+        background-color: #8591ff;
+    }
+    
+    .lenguaje {
+        background-color: #ff85f3;
+    }
+    
+    th {
+        background-color: rgb(228, 166, 255);
+    }
+    
+    .hora {
+        background-color: rgb(228, 166, 255);
+        font-family: mayan;
+    }
+    
+    #rec {
+        background-color: rgb(162, 162, 162);
+        font-family: amigo;
+        font-size: xx-large;
+    }

@@ -1,0 +1,182 @@
+@font-face {
+    font-family: mexicana;
+    src: url(../Fonts/Mexicana.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../Fonts/Mayan.ttf);
+}
+
+body {
+    background-color: rgb(255, 242, 176);
+    color: rgb(66, 36, 36);
+    font-family: texto;
+}
+
+.ctr {
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
+
+
+/* Colores para el hr */
+
+hr {
+    border: 1px solid rgb(166, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 100px;
+    font-family: mexicana;
+    margin: 0;
+    color: #45a049;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 50%;
+}
+
+fieldset {
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+/* Estilos para el botón */
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: auto;
+}
+
+
+/* Cambia el color del botón al pasar el ratón por encima */
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para centrar la pregunta sobre el guacamole */
+
+label[for="publicidad"] {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Estilos para centrar el checkbox del guacamole */
+
+#publicidad {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+
+/* Estilos para reducir el espacio entre textarea y sus etiquetas */
+
+label[for="alergia"],
+label[for="opinion"] {
+    margin-bottom: -16px;
+}
+
+
+/* Estilos para los textareas */
+
+textarea {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para resaltar el cuadro de texto al pasar el ratón */
+
+textarea:hover {
+    border: 1px solid #45a049;
+    /* Cambia el grosor y color del borde al pasar el ratón */
+    box-shadow: 0 0 5px rgba(69, 160, 73, 0.7);
+    /* Agrega una sombra al cuadro de texto al pasar el ratón */
+}
+
+
+/* Estilos para resaltar el cuadro de texto al pasar el ratón */
+
+input:hover {
+    border: 1px solid #45a049;
+    /* Cambia el grosor y color del borde al pasar el ratón */
+    box-shadow: 0 0 5px rgba(69, 160, 73, 0.7);
+    /* Agrega una sombra al cuadro de texto al pasar el ratón */
+}
+
+
+/* Estilos para las cajas que contienen los formularios (fieldset) */
+
+fieldset {
+    height: 100%;
+    border: 1px solid #45a049;
+    /* Ajusta el color del borde */
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para "Datos personales" */
+
+#uno {
+    background-color: #45a049;
+    /* Color de fondo que desees */
+    color: white;
+    /* Color del texto */
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    color: darkred;
+    /* Color del texto granate */
+}
+
+
+/* Estilos para "Comida" */
+
+#dos legend {
+    background-color: #45a049;
+    /* Color de fondo que desees */
+    color: white;
+    /* Color del texto */
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    color: darkred;
+    /* Color del texto granate */
+}

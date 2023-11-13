@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/S_Form.css">
+</head>
+
+<body>
+    <p id="titulo">HAZ TU PEDIDO</p>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <form action="mailto:javierarruabarrena03@gmail.com" method="post">
+                    <fieldset>
+                        <legend id="uno">Datos personales</legend>
+                        <label for="nombre">Nombre y apellidos</label><br>
+                        <input type="text" name="nombre" placeholder="introduce tu nombre"><br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" placeholder="ejemplo@email.com"><br><br>
+                        <label for="dire">Dirección</label><br>
+                        <input type="text" name="dire"><br><br>
+                        <label for="reserva">¿De cuántas personas es la reserva?</label><br>
+                        <input type="radio" name="reserva">Una<br>
+                        <input type="radio" name="reserva">Dos<br>
+                        <input type="radio" name="reserva">Más de dos<br>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form action="mailto:javierarruabarrena03@gmail.com" method="post">
+                    <fieldset id="dos">
+                        <legend>Comida</legend>
+                        <label for="monumento">¿Qué platos deseas pedir?</label>
+                        <select name="monumento">
+                            <option>Totopos con todo</option>
+                            <option>Quesadillas simples</option>
+                            <option>Tacos surtidos</option>
+                            <option>Enchiladas</option>
+                            <option>Pozole</option>
+                        </select><br><br>
+                        <label for="alergia" class="ctr">¿Tienes alguna alergia o intolerancia alimenticia?</label><br>
+                        <textarea name="alergia" rows="5" cols="40" class="txt"></textarea>
+                        <br><label for="opinion" class="ctr">¿Por qué nos has elegido?</label><br>
+                        <textarea name="opinion" rows="5" cols="40" class="txt"></textarea>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <label for="publicidad">¿Deseas guacamole con el pedido?</label>
+        <input type="checkbox" id="publicidad" name="publicidad"><br><br>
+        <input type="submit" value="Hacer pedido">
+    </div>
+</body>
+
+</html>
